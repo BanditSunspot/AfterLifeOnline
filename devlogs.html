@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/IconWeb.PNG" type="image/x-icon" class="WebPageLogo">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>DevLogs</title>
+    <script></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/logo.png" alt="Logo">
+        </div>
+        <nav class="navigation">
+            <a href="index.html">Accueil</a>
+            <a href="">Boutique</a>
+            <a href="devlogs.html">DevLogs</a>
+        </nav>
+    </header>
+    <div class="ImgBanner">
+        <h1 class="overlay-text">DevLogs</h1>
+    </div>
+    <main>
+      <div style="text-align: center; padding-bottom: 20px;">
+        <h3 style="color: white;">Choose Annonces Languages</h3>
+        <button type="button" id="FrButton">🇫🇷 Français</button>
+        <button type="button" id="EnButton">🇬🇧 English</button>
+      </div>
+      <div id="AnnoncesContainer">
+
+      </div>
+    </main>
+    <footer>
+      <div class="footer-section">
+          <h3>Suivez-nous</h3>
+          <a href="https://facebook.com" target="_blank">Facebook</a> |
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+      </div>
+      <div class="footer-section">
+          <p>&copy; 2024 AfterLifeOnline. Tous droits réservés.</p>
+      </div>
+  </footer>
+
+  <template id="AnnoncesTempFr">
+    <section class="Annonces">
+        <p>🇫🇷<br>
+            <span class="ArrowSpan"><img src="Images/MiniArrow.png" height="20px" alt=""></span> Les dégâts sont désormais répartis de façon équitable dans chaque balle tirée par salve.<br>
+            <span class="ArrowSpan"><img src="Images/MiniArrow.png" height="20px" alt=""></span> Il est désormais possible d’orienter son vaisseau automatiquement dans la direction souhaitée avec le clic droit de la souris.<br>
+            <br>
+            Video :<br>
+            <center>
+                <video controls width="500">
+                    <source src="https://cdn.discordapp.com/attachments/1034850171227476089/1197607748226007120/orientclick.mp4?ex=66883aa1&is=6686e921&hm=29044df396d79c08dd4c33f36059493b596159ac7c6de6778b5000717ee5b9a1&" type="video/webm" />
+                </video>
+            </center>
+            <br><br>
+            🇫🇷 <br>
+            <span class="ArrowSpan"><img src="Images/MiniArrow.png" height="20px" alt=""></span> Il est désormais possible de changer de secteur via la carte des secteurs.<br>
+            <br>
+            Video :<br>
+            <center>
+                <video controls width="500">
+                    <source src="https://cdn.discordapp.com/attachments/1034850171227476089/1197607878689824829/jump.mp4?ex=66883ac0&is=6686e940&hm=aa590fd7d06f97baafb4b6b9d48e3ae85856fee30944b4348925fa052c608fe4&" type="video/webm" />
+                </video>
+            </center>
+            <br><br>
+            🇫🇷 <br>
+            <span class="ArrowSpan"><img src="Images/MiniArrow.png" height="20px" alt=""></span> un premier prototype d'AI à été créer, désormais chaque AI possède ses propriété (PV, vitesse,) cependant ils sont encore au stade expérimental. cela sera abordé dans le prochain dev blog d'ici début avril.<br>
+            Note : La plupart des effets sont provisoires.<br>
+            Vous pouvez aider financièrement AfterLifeOnline ici : https://www.buymeacoffee.com/Furtif7<br>
+        </p>
+    </section>
+  </template>
+
+  <template id="AnnoncesTempEn">
+    <section class="Annonces">
+        <p>
+            🇬🇧 <br>
+            <span class="ArrowSpan"><img src="Images/MiniArrow.png" height="20px" alt=""></span> Damage is now distributed evenly in each bullet fired per salvo.<br>
+            <span class="ArrowSpan"><img src="Images/MiniArrow.png" height="20px" alt=""></span> It is now possible to automatically orient your ship in the desired direction with the right click of the mouse.<br>
+            Video :<br>
+            <center>
+                <video controls width="500">
+                    <source src="https://cdn.discordapp.com/attachments/1034850171227476089/1197607748226007120/orientclick.mp4?ex=66883aa1&is=6686e921&hm=29044df396d79c08dd4c33f36059493b596159ac7c6de6778b5000717ee5b9a1&" type="video/webm" />
+                </video>
+            </center>
+            <br><br>
+            🇬🇧 <br>
+            <span class="ArrowSpan"><img src="Images/MiniArrow.png" height="20px" alt=""></span> It is now possible to change sectors via the sector map.<br>
+            Video :<br>
+            <center>
+                <video controls width="500">
+                    <source src="https://cdn.discordapp.com/attachments/1034850171227476089/1197607878689824829/jump.mp4?ex=66883ac0&is=6686e940&hm=aa590fd7d06f97baafb4b6b9d48e3ae85856fee30944b4348925fa052c608fe4&" type="video/webm" />
+                </video>
+            </center>
+            <br><br>
+            🇬🇧 <br>
+            <span class="ArrowSpan"><img src="Images/MiniArrow.png" height="20px" alt=""></span> a first AI prototype has been created, now each AI has its properties (PV, speed,) however they are still at the experimental stage. this will be covered in the next dev blog by the beginning of April.<br>
+            Note: Most effects are temporary.<br>
+            You can support AfterLife Online here : https://www.buymeacoffee.com/Furtif7<br>
+        </p>
+    </section>
+  </template>
+  <script src="JS/AnnoncesManager.js"></script>
+</body>
+</html>
