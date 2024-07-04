@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: rgb(230, 220, 207);
+  }
+
+  .WebPageLogo{
+    border-radius: 50%;
+  }
+  
+  header {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #1d1c1c;
+    color: white;
+  }
+
+  .title{
+    text-align: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  nav{
+    margin-top: 20px;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: #FF9800;
+  }
+  nav a:active {
+    transform: scale(0.95);
+  }
+  
+  .navigation a:hover {
+    color: #ff9800;
+  }
+
+  .NavHead{
+      z-index: 1;
+  }
+  
+  main {
+    text-align: left;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .footer-section {
+    margin: 20px 0;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section a {
+    color: #ff9800;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .ImgBanner{
+    background-image: url("../Images/Banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+    width: 100%;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 40px; 
+    text-align: center;
+  }
