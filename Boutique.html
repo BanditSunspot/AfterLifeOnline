@@ -6,6 +6,15 @@
     <link rel="icon" href="Images/IconWeb.PNG" type="image/x-icon" class="WebPageLogo">
     <link rel="stylesheet" href="CSS/style.css">
     <title>After Life Online Accueil</title>
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+          }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -18,9 +27,14 @@
             <a href="devlogs.html">DevLogs</a>
         </nav>
     </header>
-    <iframe
-        width="250" height="250" style="border:1px solid #eeeeee;"
-        src="https://3dviewer.net/embed.html#model=$camera=169.48379,370.18722,427.39485,255.46234,255.54915,255.43774,0.00000,1.00000,0.00000,45.00000$cameramode=perspective$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$edgesettings=off,0,0,0,1">
-    </iframe>
+	<body>
+    <div id="heading">
+      <h1>THE MILLENNIUM FALCON</h1>
+      <div class="border"></div>
+    </div>
+    <div id="progress-container">
+      <div id="progress">Engaging Hyperdrive...</div>
+    </div>
+    <script type="module" src="./JS/Boutique3D.js"></script>
 </body>
 </html>
