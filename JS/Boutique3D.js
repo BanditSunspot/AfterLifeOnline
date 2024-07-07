@@ -12,7 +12,7 @@ renderer.setPixelRatio(window.devicePixelRatio);
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
-document.body.appendChild(renderer.domElement);
+document.getElementById("ModelView").appendChild(renderer.domElement);
 
 const scene = new THREE.Scene();
 
@@ -61,8 +61,6 @@ loader.load('scene.gltf', (gltf) => {
 
   mesh.position.set(0, 1.05, -1);
   scene.add(mesh);
-
-  document.getElementById('progress-container').style.display = 'none';
 }, (xhr) => {
   console.log(`loading ${xhr.loaded / xhr.total * 100}%`);
 }, (error) => {
